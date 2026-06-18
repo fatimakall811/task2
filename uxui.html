@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Shifra-Explore</title>
+    
+</head>
+<body class="">
+<header> 
+<!-- NavBar -->
+<nav id="navBar" class="bg-white">
+<div class="container flex items-center px-4 py-4 mx-auto sm:px-8 gap-8">
+ 
+    <div>
+        <img src="images/logo.png" alt="logo" class="w-18">
+    </div>
+
+    <!-- links desktop -->
+    <div class="hidden md:block">
+        <ul class="flex gap-10">
+            <li><a href="index.html" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">Explore <i class="fa-solid fa-angle-down"></i> </a></li>
+            <li><a href="courses.html" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">Courses <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#foot" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">Contact <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="about.html" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">About Us <i class="fa-solid fa-angle-down"></i></a></li>
+           
+        </ul>
+    </div>
+
+
+    <!-- { icons } -->
+    <div class="flex items-center gap-5 ml-auto">
+
+        <div>
+         <i class="fa-regular fa-bell pt-3"></i>
+        </div>
+        
+       <div class=" flex justify-center items-center h-10 w-10 rounded-full bg-yellow-500 shadow-md">
+        <i class="fa-solid fa-r text-white "></i>
+       </div>
+       
+    </div>
+
+    <!-- hamburger -->
+    <div class="md:hidden">
+        <button onclick="toggleMenu()" class="text-2xl text-gray-600">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</div>
+
+<!-- mobile menu -->
+<div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+    <ul class="flex flex-col gap-3 p-4 bg-pink-50 rounded-xl">
+        <li><a href="index.html" class="block font-medium text-gray-600 hover:text-pink-500">Explore</a></li>
+        <li><a href="courses.html" class="block font-medium text-gray-600 hover:text-pink-500">Courses</a></li>
+        <li><a href="#foot" class="block font-medium text-gray-600 hover:text-pink-500">Contact</a></li>
+        <li><a href="about.html" class="block font-medium text-gray-600 hover:text-pink-500">About Us</a></li>
+    </ul>
+</div>
+</nav>
+    </header>
+<main class="bg-gray-100">
+<!-- { course details section } -->
+<section class="py-20">
+  <div class="container px-4 mx-auto sm:px-8 md:px-16">
+
+    <!-- title -->
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-blue-950">
+        UI_UX Fundamentals
+      </h2>
+    </div>
+
+    <!-- top section -->
+    <div class="grid grid-cols-1 gap-8 mb-12 lg:grid-cols-2 items-center">
+
+      <div>
+        <p class="text-xl lg:text-3xl text-center lg:text-left leading-relaxed text-gray-600 font-medium">
+          Start your journey in UI and UX design—from research to prototype.
+          Hands-on projects, cutting-edge tools, and expert advice from expert instructors.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/uiux.jpg"
+          class="w-full rounded-2xl shadow-lg object-cover">
+      </div>
+
+    </div>
+
+    <!-- instructor card -->
+    <div class="p-6 mb-20 bg-white rounded-lg shadow-md ">
+      <h3 class="mb-5 text-4xl font-bold text-blue-950">Instructor</h3>
+
+      <div class="flex flex-col md:flex-row gap-4 items-start">
+        <img src="images/ahmed.jpg"
+          class="w-20 h-20 rounded-full object-cover">
+
+        <div>
+          <h4 class="text-3xl font-bold text-blue-950 mb-2">Ahmed Khalil</h4>
+          <p class="text-gray-700 font-medium mb-3">
+            Senior Product Designer • 8 years experience
+          </p>
+          <p class="text-gray-700 font-medium leading-7">
+            Ahmed worked with startups and large enterprises to build delightful
+            user experiences. He focuses on <br> research-driven design and
+            pixel-perfect interfaces.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- about + price -->
+    <div class="grid grid-cols-1 gap-15 lg:grid-cols-2 items-start">
+
+      <!-- about -->
+      <div>
+        <h3 class="mb-4 text-4xl font-bold text-blue-950 text-center lg:text-left">
+          About this course
+        </h3>
+
+        <p class="text-xl lg:text-3xl text-center lg:text-left  leading-relaxed text-gray-600 font-medium ">
+          In this course, you will learn to conduct user research, design simple
+          interfaces, create interactive prototypes, and conduct practical
+          usability tests with applied exercises.
+        </p>
+      </div>
+
+      <!-- price card -->
+      <div class="p-6 bg-white rounded-lg shadow-md self-start mt-6 lg:mt-0 lg:ml-20 ">
+        <div class="flex justify-between items-center mb-4">
+          <h4 class="text-2xl font-bold text-gray-800">Course Price</h4>
+          <span class="px-4 py-2 text-4xl font-bold text-red-500 bg-red-100 rounded-lg">
+            55$
+          </span>
+        </div>
+        <hr class="text-gray-200">
+
+        <div class="flex justify-between mb-6 text-gray-600">
+          <span class="text-yellow-500 text-2xl">★★★☆☆ </span>
+          <span class="text-blue-950 font-medium">3.2 (50 students)</span>
+        </div>
+
+        <div class="grid grid-cols-3 text-center mb-6">
+          <div>
+            <p class="font-medium text-gray-600 pb-2">Lessons</p>
+            <p class="text-gray-600">12</p>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-600 pb-2">Duration</p>
+            <p class="text-gray-600">6h</p>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-600 pb-2">Level</p>
+            <p class="text-gray-600">Beginner</p>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center mb-5">
+          <img src="images/ahmed.jpg"
+            class="w-14 h-14 rounded-full object-cover">
+
+          <div>
+            <h5 class="font-bold text-blue-950">Ahmed Khalil</h5>
+            <p class="text-sm text-gray-800">
+              Senior Product Designer • 8 years <br> experience
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 text-center text-gray-600 font-medium gap-3">
+          <span class="inline-flex items-center justify-center px-1 py-1 rounded-full bg-gray-100 ">Certificate</span>
+          <span class="inline-flex items-center justify-center px-1 py-1 rounded-full bg-gray-100 ">Projects</span>
+          <span class="inline-flex items-center justify-center px-1 py-1 rounded-full bg-gray-100 ">Lifetime Access</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- {  section 2} -->
+<section class="mt-25 pb-25">
+<div class="container px-4 mx-auto sm:px-8 md:px-16">
+    <!-- Curriculum -->
+    <h2 class="text-4xl md:text-5xl font-medium text-blue-950 mb-6">
+        Curriculum
+    </h2>
+     
+    <div class="flex flex-col bg-white space-y-5 bg-red-100 border border-gray-200 rounded-lg shadow-sm overflow-hidden px-5 py-2">
+
+        <!-- item -->
+        <div class="flex justify-between items-center p-3 border border-gray-200">
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold text-gray-600">
+                    1. Introduction & Course Overview
+                </h3>
+                <p class="text-sm text-gray-600 mt-1">
+                    10 min • Overview
+                </p>
+            </div>
+            <p class="font-semibold text-gray-600">
+                Preview
+            </p>
+        </div>
+
+        <div class="flex justify-between items-center p-3 border border-gray-200">
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold text-gray-600">
+                    2. User Research Methods
+                </h3>
+                <p class="text-sm text-gray-600 mt-1">
+                    45 min • 3 lessons
+                </p>
+            </div>
+            <p class="font-semibold text-gray-600">
+                3 lectures
+            </p>
+        </div>
+
+        <div class="flex justify-between items-center p-3 border border-gray-200">
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold text-gray-600">
+                    3. Information Architecture & Wireframing
+                </h3>
+                <p class="text-sm text-gray-600 mt-1">
+                    45 min • 3 lessons
+                </p>
+            </div>
+            <p class="font-semibold text-gray-600">
+                3 lectures
+            </p>
+        </div>
+
+        <div class="flex justify-between items-center p-3 border border-gray-200">
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold text-gray-600">
+                    4. Visual Design & Components
+                </h3>
+                <p class="text-sm text-gray-600 mt-1">
+                    1.5 hr • 5 lessons
+                </p>
+            </div>
+            <p class="font-semibold text-gray-600">
+                5 lectures
+            </p>
+        </div>
+
+        <div class="flex justify-between items-center p-3 border border-gray-200">
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold text-gray-600">
+                    5. Prototyping & Usability Testing
+                </h3>
+                <p class="text-sm text-gray-600 mt-1">
+                    1 hr • 3 lessons
+                </p>
+            </div>
+            <p class="font-semibold text-gray-600">
+                3 lectures
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Learn -->
+    <div class="mt-16">
+
+        <h2 class="text-4xl md:text-5xl font-medium text-blue-950 mb-6">
+            What you'll learn
+        </h2>
+
+        <ul class="list-disc pl-8 space-y-4 text-lg md:text-xl leading-relaxed">
+            <li>User Experience (UX) Design Basics</li>
+            <li>Designing User Interfaces (UIs) with Figma</li>
+            <li>Transforming Research into Testable Interfaces</li>
+            <li>Building and Evaluating a Prototype with Users</li>
+        </ul>
+
+    </div>
+
+    <!-- Reviews -->
+    <div class="mt-16">
+
+        <h2 class="text-4xl md:text-5xl font-medium text-blue-950 pb-8 bg-gray-100">
+            Student Reviews
+        </h2>
+
+        <!-- card 1 -->
+         <div class=" bg-white px-3 py-1">
+
+        <div class="bg-white border border-gray-200 rounded-lg p-5 mb-5 flex flex-col md:flex-row justify-between gap-4 shadow-sm">
+
+            <div class="flex gap-4">
+                <img src="images/saeed.jpg"
+                     class="w-16 h-16 rounded-full object-cover">
+
+                <div>
+                    <h4 class="font-semibold text-lg">سعيد علي</h4>
+                    <div class="text-yellow-500 text-lg">★★★★★</div>
+                    <p class=" text-sm mt-2">
+                       . تعلمت أشياء أقدر أطبقها على شغلي فوراً. المدرب ممتاز
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-gray-400 text-sm">
+                6 Min
+            </div>
+        </div>
+
+
+<!-- { card 2 } -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5 mb-5 flex flex-col md:flex-row justify-between gap-4 shadow-sm">
+
+            <div class="flex gap-4">
+                <img src="images/ayla.jpg"
+                     class="w-16 h-16 rounded-full object-cover">
+
+                <div>
+                    <h4 class="font-semibold text-lg">آلاء محمد</h4>
+                    <div class="text-yellow-500 text-lg">★★★★★</div>
+                    <p class=" text-sm mt-2">
+                       . كورس ممتاز، الشرح واضح والتطبيقات عملية جداً
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-gray-400 text-sm">
+                20 Min
+            </div>
+        </div>
+
+
+        <!-- { card 3 } -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5 flex flex-col md:flex-row justify-between gap-4 shadow-sm">
+
+            <div class="flex gap-4">
+                <img src="images/s5.jpg"
+                     class="w-16 h-16 rounded-full object-cover">
+
+                <div>
+                    <h4 class="font-semibold text-lg">جنى خالد</h4>
+                    <div class="text-yellow-500 text-lg">★★★★★</div>
+                    <p class=" text-sm mt-2">
+                       . المدرب ممتاز والمحتوى منظم بشكل احترافي
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-gray-400 text-sm">
+                20 Day
+            </div>
+
+        </div>
+       </div>
+    </div>
+</div>
+</section>
+
+
+<!-- { foot } -->
+</main>
+<footer id="foot" class="bg-blue-950 pb-12 rounded-xl">
+    <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+        <!-- { title } -->
+      <div class="mb-7">
+        <h2 class="text-3xl font-bold text-center text-white md:text-5xl">Ready to start your learninh journey?</h2>
+      </div>
+
+<!-- { description & icons } -->
+
+<div class="flex flex-col space-y-7 justify-center items-center">
+
+<div class="">
+    <a href="#" class="inline-block text-blue-950 px-12 py-3 bg-white  rounded-3xl">Register Now</a>
+</div>
+
+
+<!-- { icons } -->
+<div class="flex gap-8">
+    <div class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center ">
+     <i class=" text-gray-300 fa-brands fa-facebook-f"></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-300 ">
+     <i class=" text-blue-950 fa-brands fa-telegram"></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center ">
+     <i class=" text-gray-300 fa-brands fa-linkedin-in "></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center bg-gray-300">
+     <i class=" text-blue-950 fa-brands fa-instagram "></i>
+    </div>
+ 
+</div>
+
+<!-- { privacy & rights} -->
+  
+<div>
+    <p class="text-gray-300 text-center">Privacy Policy |  Terms & Conditions <br>
+
+2025 Shifra Training Center - All Rights Reserved</p>
+</div>
+
+
+
+</div>
+    </div>
+     
+    </footer>
