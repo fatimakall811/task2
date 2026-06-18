@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Shifra-Courses</title>
+</head>
+<body>
+ 
+ <main class="bg-gray-100">
+
+    <!-- { hero section } -->
+<section id="hero2" class="h-screen bg-cover bg-center mb-24 rounded-b-lg" style="background-image: url('images/hero2.jpg')">
+
+
+    <!-- NavBar -->
+<nav id="navBar" class=" top-0 w-full bg-white/60">
+<div class="container flex items-center px-4 py-4 mx-auto sm:px-8 gap-8">
+ 
+    <div>
+        <img src="images/logo.png" alt="logo" class="w-18">
+    </div>
+
+    <!-- links desktop -->
+    <div class="hidden md:block">
+        <ul class="flex gap-10">
+            <li><a href="index.html" class="text-base font-medium text-gray-500 duration-200 hover:text-blue-900">Explore <i class="fa-solid fa-angle-down"></i> </a></li>
+            <li><a href="courses.html" class="text-base font-medium text-gray-500 duration-200 hover:text-blue-900">Courses <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#foot" class="text-base font-medium text-gray-500 duration-200 hover:text-blue-900">Contact <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="about.html" class="text-base font-medium text-gray-500 duration-200 hover:text-blue-900">About Us <i class="fa-solid fa-angle-down"></i></a></li>
+           
+        </ul>
+    </div>
+
+
+    <!-- { icons } -->
+    <div class="flex items-center gap-5 ml-auto">
+
+        <div>
+         <i class="fa-regular fa-bell pt-3"></i>
+        </div>
+        
+       <div class=" flex justify-center items-center h-10 w-10 rounded-full bg-yellow-500 shadow-md">
+        <i class="fa-solid fa-r text-white "></i>
+       </div>
+       
+    </div>
+
+    <!-- hamburger -->
+    <div class="md:hidden">
+        <button onclick="toggleMenu()" class="text-2xl text-gray-600">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</div>
+
+<!-- mobile menu -->
+<div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+    <ul class="flex flex-col gap-3 p-4 bg-pink-50 rounded-xl">
+        <li><a href="index.html" class="block font-medium text-gray-600 hover:text-pink-500">Explore</a></li>
+        <li><a href="courses.html" class="block font-medium text-gray-600 hover:text-pink-500">Courses</a></li>
+        <li><a href="#foot" class="block font-medium text-gray-600 hover:text-pink-500">Contact</a></li>
+        <li><a href="about.html" class="block font-medium text-gray-600 hover:text-pink-500">About Us</a></li>
+    </ul>
+</div>
+</nav>
+</section>
+
+<!-- { section 2 \ text } -->
+<section class="mt-8">
+    <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+     <div class="flex flex-col justify-center items-center space-y-10">
+        <p class="text-center lg:text-left  text-xl md:text-3xl lg:text-4xl font-medium text-blue-950">
+            Learn from top experts and take your skills to  <br>
+            next level with our featured courses across <br> design, marketing, cybersecurity, web <br>  development, and more!
+       </p>
+
+       <a href="#UXUI" class="px-8 py-3 font-sans text-white transition duration-200 bg-blue-950 hover:bg-yellow-600 rounded-3xl hover:scale-105"> 
+            Search Courses    
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+     </div>
+    </div>
+</section>
+
+
+
+<!-- { small div } -->
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+<div class="flex flex-col  items-center justify-center space-y-5">
+
+
+  <h3 class=" text-blue-950 font-bold ">
+    All categories
+  </h3>
+<div class="flex flex-col lg:flex-row gap-3 items-center justify-center pb-8">
+
+<!-- { inputs } -->
+<div class="flex items-center gap-2">
+  <input type="checkbox" class="w-4 h-4">
+  <a href="#UXUI">
+     <span class="text-blue-950">Design</span>
+  </a>
+ 
+</div>
+
+ <div class="flex items-center gap-2">
+  <input type="checkbox" class="w-4 h-4">
+  <a href="#marketing">
+    <span class="text-blue-950">Marketing</span>
+  </a>
+</div>
+
+ <div class="flex items-center gap-2">
+  <input type="checkbox" class="w-4 h-4">
+  <a href="#web">
+    <span class="text-blue-950">Web Development</span>
+  </a>
+</div>
+
+ <div class="flex items-center gap-2">
+  <input type="checkbox" class="w-4 h-4">
+  <a href="#cyber">
+    <span class="text-blue-950">Cyber Security</span>
+  </a>
+</div>
+
+ <div class="flex items-center gap-2">
+  <input type="checkbox" class="w-4 h-4">
+  <a href="#content">
+    <span class="text-blue-950">Content writing</span>
+  </a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- { Design Courses section } -->
+  <section id="UXUI" class="bg-gray-100 px-8 md:px-16">
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+<!-- { title } -->
+  <h2 class="text-4xl font-bold text-blue-950 mb-10">
+    Design Courses
+  </h2>
+
+<!-- { grid cards } -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+        
+      <img src="images/uiux.jpg" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/ahmed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          UI_UX Fundamentals
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 10 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★☆☆</span>
+          <span class="text-red-500 font-semibold text-xl">$55</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group  overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/motion graphic.png" class="w-full h-52 object-cover" alt="">
+      
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/aya.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Motion Graphic
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 30 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$29</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group  overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/graphic design.png" class="w-full h-52 object-cover" alt="">
+      
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/mohammed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Graphic Design
+        </h3>
+       
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 25 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$100</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group  overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/video managment.png" class="w-full h-52 object-cover" alt="">
+      
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/sara.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Video montage
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 50 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-red-500 font-semibold text-xl">$20</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+</section>
+
+
+
+
+
+<!-- { Marketing section } -->
+  <section id="marketing" class="bg-gray-100 px-8 md:px-16">
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+<!-- { title } -->
+  <h2 class="text-4xl font-bold text-blue-950 mb-10">
+    Marketing
+  </h2>
+
+  <!-- { grid cards } -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+        
+      <img src="images/digital marketing.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/ahmed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Digital marketing
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 10 lessons</span>
+          <span>👥 35 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-red-500 font-semibold text-xl">$70</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/social media.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/aya.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+           Social Media Marketing
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 30 lessons</span>
+          <span>👥 15 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$45</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative  hover:shadow-xl hover:-translate-y-2">
+      <img src="images/content marketing.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/mohammed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Content Marketing
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$45</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative  hover:shadow-xl hover:-translate-y-2">
+      <img src="images/google ads.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/sara.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Google Ads & Analytics
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 18 lessons</span>
+          <span>👥 70 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-red-500 font-semibold text-xl">$35</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+</section>
+
+
+
+<!-- { Web Development section } -->
+  <section id="web" class="bg-gray-100  px-8 md:px-16">
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+<!-- { title } -->
+  <h2 class="text-4xl font-bold text-blue-950 mb-10">
+    Web Development
+  </h2>
+
+  <!-- { grid cards } -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative  hover:shadow-xl hover:-translate-y-2">
+        
+      <img src="images/react.js.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/ahmed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-2xl font-semibold text-blue-950">
+          React.js Essentials
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 10 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★☆☆</span>
+          <span class="text-red-500 font-semibold text-xl">$90</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/full-stack.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/aya.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+           Full-Stack Development
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 120 lessons</span>
+          <span>👥 26 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$300</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative  hover:shadow-xl hover:-translate-y-2">
+      <img src="images/database.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/mohammed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Database Management
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 18 lessons</span>
+          <span>👥 36 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$87</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative  hover:shadow-xl hover:-translate-y-2">
+      <img src="images/front-back.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/sara.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Front-End Development
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 33 lessons</span>
+          <span>👥 78 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-red-500 font-semibold text-xl">$70</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+</section>
+
+
+
+
+
+<!-- { Cyber Security section } -->
+  <section id="cyber" class="bg-gray-100 px-8 md:px-16">
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+<!-- { tile } -->
+  <h2 class="text-4xl font-bold text-blue-950 mb-10">
+    Cyber Security
+  </h2>
+
+  <!-- { grid cards } -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+        
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/ahmed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <img src="images/hacking.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="p-4 pt-10">
+        <h3 class="text-2xl font-semibold text-blue-950">
+          Ethical Hacking
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 10 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★☆☆</span>
+          <span class="text-red-500 font-semibold text-xl">$55</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/network.png" class="w-full h-52 object-cover" alt="">
+      
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/aya.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+           Network security
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 30 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$29</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/foe web.png" class="w-full h-52 object-cover" alt="">
+      
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/mohammed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Cyber Security For Web
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 25 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$100</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/basic.png" class="w-full h-52 object-cover" alt="">
+      
+       <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/sara.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Cyber Security Basic
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 50 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-red-500 font-semibold text-xl">$20</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+   </section>
+
+   
+<!-- { Content writing section } -->
+  <section id="content" class="bg-gray-100 py-16 px-8 md:px-16">
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+<!-- { title } -->
+  <h2 class="text-4xl font-bold text-blue-950 mb-10">
+    Content Writing
+  </h2>
+
+  <!-- { grid cards } -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+        
+      <img src="images/content writing.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/ahmed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-2xl font-semibold text-blue-950">
+          Content Writing Basic
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 10 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★☆☆</span>
+          <span class="text-red-500 font-semibold text-xl">$55</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg  transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/seo'.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/aya.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+           SEO Writing
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 30 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$29</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative  hover:shadow-xl hover:-translate-y-2">
+      <img src="images/blog.png" class="w-full h-52 object-cover" alt="">
+      
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/mohammed.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Blog & Article Writing 
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 25 lessons</span>
+          <span>👥 25 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="text-red-500 font-semibold text-xl">$100</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-lg transition duration-300 shadow-md group overflow-hidden relative hover:shadow-xl hover:-translate-y-2">
+      <img src="images/basic.png" class="w-full h-52 object-cover" alt="">
+      <div class="absolute left-6 top-40 w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-md">
+       <img src="images/sara.jpg" alt="" class="w-full h-full object-cover ">
+      </div>
+      <div class="p-4 pt-10">
+        <h3 class="text-xl font-semibold text-blue-950">
+          Copywriting Marketing
+        </h3>
+
+        <div class="flex gap-6 text-sm text-gray-500 mt-2">
+          <span>📖 12 lessons</span>
+          <span>👥 50 students</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-red-500 font-semibold text-xl">$20</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+   </section>
+ 
+ </main>  
+
+
+
+<!-- { footer } -->
+ <footer id="foot" class="bg-blue-950 pb-12 rounded-xl">
+    <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+        <!-- { title } -->
+      <div class="mb-7">
+        <h2 class="text-3xl font-bold text-center text-white md:text-5xl">Ready to start your learninh journey?</h2>
+      </div>
+
+<!-- { description & icons } -->
+
+<div class="flex flex-col space-y-7 justify-center items-center">
+
+<div class="">
+    <a href="#" class="inline-block text-blue-950 px-12 py-3 bg-white  rounded-3xl">Register Now</a>
+</div>
+
+
+<!-- { icons } -->
+<div class="flex gap-8">
+    <div class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center ">
+     <i class=" text-gray-300 fa-brands fa-facebook-f"></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-300 ">
+     <i class=" text-blue-950 fa-brands fa-telegram"></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center ">
+     <i class=" text-gray-300 fa-brands fa-linkedin-in "></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center bg-gray-300">
+     <i class=" text-blue-950 fa-brands fa-instagram "></i>
+    </div>
+ 
+</div>
+
+<!-- { privacy & rights} -->
+  
+<div>
+    <p class="text-gray-300 text-center">Privacy Policy |  Terms & Conditions <br>
+
+2025 Shifra Training Center - All Rights Reserved</p>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

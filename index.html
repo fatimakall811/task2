@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Shifra</title>
+    
+</head>
+<body>
+<header id="headd">
+        
+<!-- NavBar -->
+<nav id="navBar" class="bg-gray-50">
+<div class="container flex items-center px-4 py-4 mx-auto sm:px-8 gap-8">
+ 
+    <div>
+        <img src="images/logo.png" alt="logo" class="w-18">
+    </div>
+
+    <!-- links desktop -->
+    <div class="hidden md:block">
+        <ul class="flex gap-10">
+            <li><a href="index.html" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">Explore <i class="fa-solid fa-angle-down"></i> </a></li>
+            <li><a href="courses.html" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">Courses <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#foot" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">Contact <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="about.html" class="text-base font-medium text-gray-400 duration-200 hover:text-blue-900">About Us <i class="fa-solid fa-angle-down"></i></a></li>
+           
+        </ul>
+    </div>
+
+
+    <!-- { icons } -->
+    <div class="flex items-center gap-5 ml-auto">
+
+        <div>
+         <i class="fa-regular fa-bell pt-3"></i>
+        </div>
+        
+       <div class=" flex justify-center items-center h-10 w-10 rounded-full bg-yellow-500 shadow-md">
+        <i class="fa-solid fa-r text-white "></i>
+       </div>
+       
+    </div>
+
+    <!-- hamburger -->
+    <div class="md:hidden">
+        <button onclick="toggleMenu()" class="text-2xl text-gray-600">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</div>
+
+<!-- mobile menu -->
+<div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+    <ul class="flex flex-col gap-3 p-4 bg-pink-50 rounded-xl">
+        <li><a href="index.html" class="block font-medium text-gray-600 hover:text-pink-500">Explore</a></li>
+        <li><a href="courses.html" class="block font-medium text-gray-600 hover:text-pink-500">Courses</a></li>
+        <li><a href="#foot" class="block font-medium text-gray-600 hover:text-pink-500">Contact</a></li>
+        <li><a href="about.html" class="block font-medium text-gray-600 hover:text-pink-500">About Us</a></li>
+    </ul>
+</div>
+</nav>
+</header>
+
+
+<main class="bg-gray-200 pb-12">
+
+    <!-- { hero section } -->
+    <section id="hero" class="bg-gray-300 h-screen mb-24">
+    <div class=" container px-4 pt-24 mx-auto sm:px-8 md:px-16 flex justify-between">
+    <div class="block lg:flex">
+
+    
+     <!-- { hero text } -->
+    <div class="flex flex-col items-start space-y-10">
+        <h1 class="text-4xl font-semibold leading-snug text-blue-950 md:text-5xl">
+            Learn, Grow your skills, <br>and start your journey with <span class="font-bold text-yellow-500"> Shifra</span>
+        </h1>
+        <p class="max-w-md text-lg text-gray-600 hidden lg:block">
+           Discover high-quality training courses in Technology,Design,Business and Languages-guided by expert instructors and certified programs that boost your career.
+        </p>
+        <div>
+         <a href="#courses" class="px-8 py-3 font-sans text-white transition duration-200 bg-blue-950 hover:bg-yellow-600 rounded-3xl hover:scale-105"> 
+            Explore Courses Now   
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        </div>
+    </div>
+
+
+  <!-- { hero images } -->
+    <div>
+     <img src="images/hero.png" alt="hero" class="w-150">
+    </div>
+    </div>
+   </div>
+   </section>
+    
+   
+
+<!-- { section 2 cards } -->
+
+<section class="m-24">
+<div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+    <div >
+
+        <!-- { title } -->
+      <div class="flex flex-col items-center mb-14">
+        <h2 class="mb-2  text-3xl md:text-4xl lg:text-5xl font-bold tracking-widest text-blue-950 ">What We Offer</h2>
+        <p class=" font-medium text-center text-gray-600">For Your Future Learning. </p>
+      </div>
+
+      <!-- { grid cards } -->
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+
+        <!-- { card one } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group rounded-2xl hover:shadow-xl hover:-translate-y-2 bg-white ">
+            <div class="h-10 w-10 flex justify-center items-center bg-gradient-to-r from-blue-950 to-gray-500 rounded-full text-center ml-4 translate-y-4">
+               <i class="fa-regular fa-paper-plane text-white text-xl"></i> 
+            </div>
+            <div class="p-6  text-left ">
+                <h3 class="text-lg font-bold text-blue-950">Online Courses</h3>
+                <p class=" text-gray-600">Learn anytime, anywhere online courses designed to build practical skills and real-world experience.</p> 
+            </div>
+        </div>
+
+
+        <!-- { card two } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group rounded-2xl hover:shadow-xl hover:-translate-y-2 bg-white">
+            <div class="h-10 w-10 flex justify-center items-center bg-gradient-to-r from-blue-950 to-gray-500 rounded-full text-center ml-4 translate-y-4">
+               <i class="fa-regular fa-user text-white text-xl"></i>
+            </div>
+            <div class="p-6 text-left">
+                <h3 class="text-lg font-bold text-blue-950">Expert Trainer</h3>
+                <p class="text-gray-600">Learn from the best trainers who understand the industry and know how to make learning engaging.</p>
+            </div>
+        </div>
+
+
+        <!-- { card three } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group rounded-2xl hover:shadow-xl hover:-translate-y-2 bg-white">
+            <div class="h-10 w-10 flex justify-center items-center bg-gradient-to-r from-blue-950 to-gray-500 rounded-full text-center ml-4 translate-y-4">
+              <i class="fa-solid fa-calendar-day text-white text-xl"></i>
+            </div>
+            <div class="p-6  text-left ">
+                <h3 class="text-lg font-bold text-blue-950"> Life Time Access </h3>
+                <p class=" text-gray-600">Once you enroll, the course is yours forever with unlimited access to all content.</p>
+            </div>
+        </div>
+
+
+        <!-- { card four } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group rounded-2xl hover:shadow-xl hover:-translate-y-2 bg-white ">
+            <div class="h-10 w-10 flex justify-center items-center bg-gradient-to-r from-blue-950 to-gray-500 rounded-full text-center ml-4 translate-y-4">
+               <i class="fa-solid fa-certificate text-white text-xl"></i>
+            </div>
+            <div class="p-6  text-left">
+                <h3 class="text-lg font-bold text-blue-950">Certificates</h3>
+                <p class=" text-gray-600">Earn recognized certificates to boost your career and showcase your skills.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- { section three courses } -->
+
+  <section id="courses" class="m-24">
+    <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+    <!-- { title } -->
+     <div class="flex items-center justify-center mb-14">
+        <h2 class="text-3xl font-bold text-center text-blue-950 lg:text-5xl">Our Featured Courses</h2>
+     </div>
+
+     <!-- { grid cards } -->
+   <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- { card one } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group  hover:shadow-xl hover:-translate-y-2">
+            <div class="overflow-hidden">
+                <img src="images/uiux.jpg" alt="skin care" class="object-cover w-full transition duration-500 h-52 group-hover:scale-105">
+            </div>
+            <div class="p-6 text-left bg-white rounded-b-2xl ">
+                <h3 class="text-lg font-bold text-gray-800">UI_UX</h3>
+                <p class="text-sm text-gray-500 pb-5">Design modern, user-friendly interfaces that create smooth digital experiences.</p>
+                <div class="text-right">
+                 <a href="uxui.html" class="inline-block text-white px-4 py-2 rounded-full text-sm bg-blue-950 ">View Course</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- { card two } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group  hover:shadow-xl hover:-translate-y-2">
+            <div class="overflow-hidden">
+                <img src="images/new degital.jpg" alt="makeup" class="object-cover w-full transition duration-500 h-52 group-hover:scale-105">
+            </div>
+            <div class="p-6 text-left bg-white rounded-b-2xl ">
+                <h3 class="text-lg font-bold text-gray-800">Digital Marketing</h3>
+                <p class="text-sm text-gray-500 pb-5">Learn smart online strategies to grow brands and connect with audiences</p>
+               <div class="text-right">
+                 <a href="uxui.html" class="inline-block text-white px-4 py-2 rounded-full text-sm bg-blue-950 ">View Course</a>
+               </div>
+            </div>
+        </div>
+
+
+        <!-- { card three } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group  hover:shadow-xl hover:-translate-y-2">
+            <div class="overflow-hidden">
+                <img src="images/web.jpg" alt="hair" class="object-cover w-full transition duration-500 h-52 group-hover:scale-105">
+            </div>
+            <div class="p-6 text-left bg-white rounded-b-2xl ">
+                <h3 class="text-lg font-bold text-gray-800">Web Development</h3>
+                <p class="text-sm text-gray-500 pb-5">Build responsive and dynamic websites using the latest web technologies.</p>
+                <div class="text-right">
+                    <a href="uxui.html" class="inline-block text-white px-4 py-2 rounded-full text-sm bg-blue-950">View Course</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- { card four } -->
+        <div class="overflow-hidden transition duration-300 shadow-md group  hover:shadow-xl hover:-translate-y-2">
+            <div class="overflow-hidden">
+                <img src="images/cyber.jpg" alt="nails" class="object-cover w-full transition duration-500 h-52 group-hover:scale-105">
+            </div>
+            <div class="p-6 text-left bg-white rounded-b-2xl ">
+                <h3 class="text-lg font-bold text-gray-800">Cyber Security</h3>
+                <p class="text-sm text-gray-500 pb-5">Protect data and systems with practical skills against real cyber threats</p>
+                <div class="text-right">
+                    <a href="uxui.html" class="inline-block text-white px-4 py-2 rounded-full text-sm bg-blue-950">View Course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  
+
+
+  <!-- { section four videos} -->
+ <section class="m-24">
+  <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-30" >
+   
+    <!-- { title } -->
+      <div class="pb-12">
+        <h2 class="text-4xl font-bold text-center text-blue-950 md:text-5xl">Why Choose Shifra?</h2>
+      </div>
+
+      <!-- { grid videos} -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
+
+        <!-- { video 1 } -->
+        <div class="flex flex-col space-y-10 items-center justify-center">
+            <div class="bg-gray-200 rounded-md">
+            <img src="images/video1.gif" class="w-auto h-45 px-2 py-2"></img>
+            </div>
+            
+            <div>
+             <a class=" px-8 lg:px-20 py-2 bg-yellow-500 text-center text-white rounded-md">
+             Expert Instructors
+            </a>
+            </div>
+        </div>
+
+
+        <!-- { video 2 } -->
+        <div class="flex flex-col space-y-10 items-center justify-center">
+           <div class="bg-gray-200 rounded-md">
+             <img src="images/video2.gif" class="w-auto  h-45 px-6 py-2 "></img>
+           </div>
+            <div>
+             <a class=" px-5 lg:px-20 py-2  bg-yellow-500 text-center text-white rounded-md">
+             Interactive Content
+            </a>
+            </div>
+        </div>
+
+        
+        <!-- { video 3 } -->
+        <div class="flex flex-col space-y-10 items-center justify-center">
+            <div class="bg-gray-200 rounded-md">
+              <img src="images/video3.gif" class="w-auto h-45 px-8 py-2"></img>
+            </div>
+           <div>
+            <a class=" px-4 lg:px-15 py-2 bg-yellow-500 text-center text-white rounded-md">
+             Fast Technical support
+            </a>
+           </div>
+        </div>
+    </div>
+  </div>
+ </section>
+
+
+
+    <!-- { section 5 students } -->
+      <section class="m-24">
+       <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+        <!-- { title } -->
+      <div class="pb-12">
+        <h2 class="text-4xl font-bold text-center text-blue-950 md:text-5xl">What Our Students Say</h2>
+      </div>
+
+      <!-- { grid students } -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
+
+      <!-- { student 1 } -->
+        <div class="flex flex-col space-y-4 text-center items-center shadow-sm py-4">
+            <img src="images/s1.jpg" alt="student1" class="h-25 w-25 rounded-full">
+            <p class="px-7 text-gray-700">
+                The lessons were clear and easy to follow. I was able to understand the topics much faster.
+            </p>
+        </div>
+
+
+     <!-- { student 2 } -->
+        <div class="flex flex-col space-y-4 text-center items-center shadow-sm py-4">
+             <img src="images/s2.jpg" alt="student1" class="h-25 w-25 rounded-full">
+            <p class="px-7 text-gray-700">
+               This platform made learning fun and simple. I truly noticed a big improvement in my skills.
+            </p>
+        </div>
+
+
+    <!-- { student 3} -->
+        <div class="flex flex-col space-y-4 text-center items-center shadow-sm py-4"> 
+             <img src="images/sara.jpg" alt="student1" class="h-25 w-25 rounded-full">
+            <p class="px-7 text-gray-700">
+                I love the flexibility; I can revisit the courses anytime I need to refresh my knowledge.
+            </p>
+        </div>
+
+
+    <!-- { student 4 } -->
+        <div class="flex flex-col space-y-4 text-center items-center shadow-sm py-4">
+             <img src="images/s4.jpg" alt="student1" class="h-25 w-25 rounded-full">
+            <p class="px-7 text-gray-700">
+               The experience completely changed how I view learning. I feel more confident now.
+            </p>
+        </div>
+
+
+    <!-- { student 5 } -->
+        <div class="flex flex-col space-y-4 text-center items-center shadow-sm py-4">
+             <img src="images/s5.jpg" alt="student1" class="h-25 w-25 rounded-full">
+            <p class="px-7 text-gray-700">
+               The content is well-structured and very practical. It feels like learning directly from an expert.
+            </p>
+        </div>
+   </div>
+
+</div>
+</section>
+</main>
+
+
+<!-- { footer } -->
+
+    <footer id="foot" class="bg-blue-950 pb-12 rounded-xl">
+    <div class="container px-4 pt-24 mx-auto sm:px-8 md:px-16">
+
+<!-- { title } -->
+      <div class="mb-7">
+        <h2 class="text-3xl font-bold text-center text-white lg:text-5xl">Ready to start your learninh journey?</h2>
+      </div>
+
+
+<!-- { description & icons } -->
+<div class="flex flex-col space-y-7 justify-center items-center">
+
+<div class="#">
+    <a href="#" class="inline-block text-blue-950 px-12 py-3 bg-white  rounded-3xl">Register Now</a>
+</div>
+
+
+<!-- { icons } -->
+<div class="flex gap-8">
+    <div class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center ">
+     <i class=" text-gray-300 fa-brands fa-facebook-f"></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-300 ">
+     <i class=" text-blue-950 fa-brands fa-telegram"></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center ">
+     <i class=" text-gray-300 fa-brands fa-linkedin-in "></i>
+    </div>
+
+    <div  class="h-8 w-8 rounded-full  border-3 border-gray-300 flex items-center justify-center bg-gray-300">
+     <i class=" text-blue-950 fa-brands fa-instagram "></i>
+    </div>
+ 
+</div>
+
+
+<!-- { privacy & rights} -->
+<div>
+    <p class="text-gray-300 text-center">Privacy Policy |  Terms & Conditions <br>
+
+2025 Shifra Training Center - All Rights Reserved</p>
+</div>
+</div>
+</div>  
+</footer>
+</body>
+</html>
